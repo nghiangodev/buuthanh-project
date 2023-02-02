@@ -1,0 +1,126 @@
+@import "../../variables";
+//MIXIN
+@import "../../mixin";
+
+.kt-header-mobile__logo img {
+	width: 80px;
+	filter: brightness(0) invert(1);
+}
+
+.kt-aside__brand-logo img, .kt-header__brand-logo img {
+	width: 70px;
+	filter: brightness(0) invert(1);
+
+	// Dùng cho logo + text
+	//img {
+	//	width: 60px;
+	//	float: left;
+	//	margin-right: 10px;
+	//}
+	//span {
+	//	overflow: hidden;
+	//	font-weight: 600;
+	//	font-size: 13px;
+	//	padding-top: 12px;
+	//	display: inline-block;
+	//	color:$company-color;
+	//}
+}
+
+@include responsive-up(lg) {
+	.kt-header-menu-wrapper {
+		flex-grow: 4;
+	}
+
+	.kt-aside-toggler {
+		margin-right: 20px;
+	}
+}
+
+.kt-subheader--transparent .kt-subheader .kt-subheader__main .kt-subheader__breadcrumbs .kt-subheader__breadcrumbs-link {
+	color: $text-color;
+}
+
+.kt-header__topbar {
+	.kt-header__topbar-item {
+		&:hover .kt-header__topbar-icon, &.show .kt-header__topbar-icon {
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+@include responsive-down(lg) {
+	.kt-header-menu-wrapper .kt-header-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link {
+		padding: .75rem 0.4rem !important;
+	}
+}
+
+.span-notification-indicator {
+	width: 10px;
+	height: 10px;
+	margin-bottom: 20px;
+	border-radius: 25%;
+}
+
+.span-bell-icon {
+	display: flex;
+	align-items: center;
+
+	i {
+		transition: all 0.3s;
+		color: #c8cad5;
+	}
+}
+
+//note: điều chỉnh header theo màu accent
+#kt_header, #kt_header_mobile {
+	background: $cloudteam-brand-color;
+
+	.kt-header__topbar-user {
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
+
+	span:not(.kt-nav__link-text), .kt-menu__link-icon, .kt-header__topbar-icon i {
+		color: white;
+	}
+
+	.kt-menu__submenu {
+		span:not(.kt-nav__link-text), .kt-menu__link-icon, .kt-header__topbar-icon i {
+			color: $text-color;
+		}
+	}
+
+	@include responsive-down(md) {
+		span:not(.kt-nav__link-text), .kt-menu__link-icon, .kt-header__topbar-icon i {
+			color: $text-color;
+		}
+	}
+
+	.kt-menu__item.kt-menu__item--active {
+		span, i {
+			color: $text-color;
+		}
+	}
+
+	.kt-header-menu .kt-menu__nav > .kt-menu__item:hover > .kt-menu__link {
+		span, i {
+			color: white;
+		}
+	}
+
+	.kt-header__topbar {
+		.kt-header__topbar-item.dropdown.show, .kt-header__topbar-item:hover {
+			& .kt-header__topbar-icon i {
+				color: $cloudteam-brand-color;
+			}
+		}
+	}
+}
+
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-topbar-toggler {
+	&.kt-header-mobile__toolbar-topbar-toggler--active i, &:hover i {
+		color: lighten($cloudteam-brand-color, 20%);
+	}
+}

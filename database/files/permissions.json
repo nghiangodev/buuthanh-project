@@ -1,0 +1,58 @@
+{
+    "admin": {
+        "modules": {
+            "user": {
+                "actions": [
+                    "view",
+                    "create",
+                    "edit",
+                    "delete",
+                    "approve"
+                ]
+            },
+            "role": {
+                "actions": [
+                    "view",
+                    "create",
+                    "edit",
+                    "delete"
+                ]
+            },
+            "permission": {
+                "actions": [
+                    "view",
+                    "edit"
+                ],
+                "hide": "true"
+            },
+            "log": {
+                "actions": [
+                    "view"
+                ],
+                "label": "Activity log"
+            },
+            "event": {
+                "actions": [
+                    "view",
+                    "create",
+                    "edit",
+                    "delete"
+                ],
+                "hide": "true"
+            }
+        },
+        "icon": "fad fa-user-cog"
+    },
+    "business": {
+        "modules": {
+            "numberal": {
+                "actions": [
+                    "view",
+                    "create",
+                    "edit",
+                    "delete"
+                ]
+            }
+        }
+    }
+}

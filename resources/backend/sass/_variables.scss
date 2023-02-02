@@ -1,0 +1,26 @@
+$cloudteam-brand-color: #000;
+$company-color: #000;
+$border-color: #e2e5ec;
+//$text-color: #212121;
+$text-color: hsl(212, 56%, 16%);
+
+$light-gray: hsl(210, 38%, 97%);
+$dark-gray: hsl(210, 32%, 93%);
+
+$layout-breakpoints: (
+	// Extra small screen / phone
+	xs: 0,
+	// Small screen / phone
+	sm: 576px,
+	// Medium screen / tablet
+	md: 768px,
+	// Large screen / desktop
+	//      lg: 1024px, //1024px,
+	lg: 1140px, //1024px,
+	// Extra large screen / wide desktop
+	xl: 1399px,
+	xxl: 1440px,
+	xxxl: 1600px
+) !default;
+
+$contexts: danger primary warning success info brand;

@@ -1,0 +1,277 @@
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+  select, textarea, input[type=text], input[type=password],
+input[type=datetime], input[type=datetime-local],
+input[type=date], input[type=month], input[type=time],
+input[type=week], input[type=number], input[type=email],
+input[type=url] {
+    font-size: 16px;
+  }
+}
+/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+  select, textarea, input[type=text], input[type=password],
+input[type=datetime], input[type=datetime-local],
+input[type=date], input[type=month], input[type=time],
+input[type=week], input[type=number], input[type=email],
+input[type=url] {
+    font-size: 16px;
+  }
+}
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+  select, textarea, input[type=text], input[type=password],
+input[type=datetime], input[type=datetime-local],
+input[type=date], input[type=month], input[type=time],
+input[type=week], input[type=number], input[type=email],
+input[type=url] {
+    font-size: 16px;
+  }
+}
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+  select, textarea, input[type=text], input[type=password],
+input[type=datetime], input[type=datetime-local],
+input[type=date], input[type=month], input[type=time],
+input[type=week], input[type=number], input[type=email],
+input[type=url] {
+    font-size: 16px;
+  }
+}
+.modal.modal-static .modal-dialog {
+  transform: none !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../../assets/media/bg/bg-budda.jpg") center;
+  background-size: cover;
+}
+
+.kt-footer .kt-footer__wrapper .kt-footer__copyright > a {
+  color: white;
+}
+
+.kt-footer .kt-container {
+  justify-content: center;
+}
+
+.kt-login__container {
+  background: white;
+  padding: 2rem;
+  border-radius: 4px;
+  max-width: 430px;
+}
+
+.kt-login.kt-login--v3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper {
+  padding: 6% 2rem 1rem 2rem;
+  margin: 0 auto 2rem auto;
+  overflow: hidden;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container {
+  width: 430px;
+  margin: 0 auto;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__logo {
+  text-align: center;
+  margin: 0 auto 2rem auto;
+}
+
+.kt-login__logo img {
+  width: 260px;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__head {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__head .kt-login__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #595d6e;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__head .kt-login__desc {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #74788d;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form {
+  margin: 0 auto;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .input-group {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control {
+  height: 46px;
+  border: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 1.5rem;
+  background: rgba(235, 237, 242, 0.4);
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control::-moz-placeholder {
+  color: #74788d;
+  opacity: 1;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control:-ms-input-placeholder {
+  color: #74788d;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control::-webkit-input-placeholder {
+  color: #74788d;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control.is-invalid + .invalid-feedback, .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control.is-valid + .valid-feedback {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-left: 1.6rem;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__extra {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #74788d;
+  font-size: 1rem;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__extra .kt-checkbox {
+  font-size: 1rem;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__extra .kt-login__link {
+  font-size: 1rem;
+  color: #74788d;
+  transition: color 0.3s ease;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__extra .kt-login__link:hover {
+  color: #2c77f4;
+  transition: color 0.3s ease;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__actions {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__actions .kt-login__btn-primary, .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .kt-login__actions .kt-login__btn-secondary {
+  height: 50px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__account {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__account .kt-login__account-msg {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #74788d;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__account .kt-login__account-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #595d6e;
+  transition: color 0.3s ease;
+}
+
+.kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__account .kt-login__account-link:hover {
+  color: #2c77f4;
+  transition: color 0.3s ease;
+}
+
+.kt-login.kt-login--v3.kt-login--signin .kt-login__signup {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--signin .kt-login__signin {
+  display: block;
+}
+
+.kt-login.kt-login--v3.kt-login--signin .kt-login__forgot {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--signup .kt-login__signup {
+  display: block;
+}
+
+.kt-login.kt-login--v3.kt-login--signup .kt-login__signin {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--signup .kt-login__forgot {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--signup .kt-login__account {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--forgot .kt-login__signup {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--forgot .kt-login__signin {
+  display: none;
+}
+
+.kt-login.kt-login--v3.kt-login--forgot .kt-login__forgot {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .kt-login.kt-login--v3 .kt-login__wrapper {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container {
+    margin: 0 auto;
+  }
+
+  .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__account {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .kt-login.kt-login--v3 .kt-login__wrapper {
+    width: 100%;
+  }
+
+  .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-login__account {
+    margin-top: 1rem;
+  }
+}

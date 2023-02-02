@@ -1,0 +1,67 @@
+//noinspection CssUnknownProperty
+@import "../../variables";
+//MIXIN
+@import "../../mixin";
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.kt-form {
+	.form-control-label, .col-form-label, > label {
+		color: $text-color;
+	}
+
+	.form-control-label, label {
+		font-weight: 500;
+	}
+}
+
+.form-control.is-invalid {
+	background-image: none;
+	padding: inherit;
+}
+
+.kt-input-icon.kt-input-icon--right .form-control {
+	padding: 0 10px
+}
+
+.form-control[readonly], .form-control {
+	border-color: $border-color;
+	color: $text-color;
+	font-family: Open Sans, sans-serif;
+}
+
+.form-control[readonly] {
+	background: hsl(210, 38%, 97%);
+}
+
+//Use Attribute Selectors with Empty Links
+a[href^="http"]:empty::before {
+	content: attr(href);
+}
+
+.mt-6 {
+	margin-top: 2rem !important;
+}
+
+.form-control-feedback, .kt-form__help {
+	font-weight: bold !important;
+}
+
+//fileinput
+.fileinput {
+	.form-control {
+		line-height: 30px;
+	}
+}
+
+//class logic
+/*.text-phone, .text-mobile-phone,*/
+.text-numeric, .text-money, .text-quantity {
+	text-align: right;
+}
+
+.bootstrap-select > .dropdown-toggle {
+	padding: .5rem 1rem;
+}

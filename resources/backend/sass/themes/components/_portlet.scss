@@ -1,0 +1,52 @@
+@import "../../variables";
+//MIXIN
+@import "../../mixin";
+
+.kt-portlet {
+	@include responsive-down(md) {
+		.kt-portlet__head-tools {
+			button, a {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+
+	.kt-portlet__body {
+		color: $text-color;
+		font-weight: 400;
+
+		.kt-portlet--collapse {
+			margin-bottom: 0;
+
+			.kt-portlet__head {
+				min-height: 52px;
+			}
+		}
+	}
+
+	.kt-portlet__head:not(.index-header) {
+		background-color: $light-gray;
+	}
+
+	.kt-portlet__head {
+		border-bottom: 1px solid #f4f5f8;
+
+		@include responsive-down(md) {
+			flex-wrap: wrap;
+		}
+
+		.kt-portlet__head-title {
+			color: $text-color !important;
+		}
+	}
+
+	.kt-portlet__foot.kt-portlet__foot--solid {
+		background-color: $light-gray;
+	}
+
+	margin-bottom: 1rem;
+}
+
+.kt-portlet--collapse .kt-portlet__head {
+	cursor: pointer;
+}

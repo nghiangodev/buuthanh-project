@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Created by hieu.pham.
+ * Date: {{date}}.
+ */
+
+namespace {{namespace}};
+
+use App\Models\Base\BaseModel as Eloquent;
+
+{{imports}}
+
+/**
+ * Class {{class}}
+ * {{properties}}
+ *
+ * @package {{namespace}}
+ */
+class {{class}} extends Eloquent
+{
+{{body}}
+}

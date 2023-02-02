@@ -1,0 +1,19 @@
+@import "../variables";
+
+.datepicker, .datetimepicker, .timepicker {
+  & tbody tr {
+    & .day.active, .day.today, .month.active, .month.focused, .year.focused, .year.active, .minute.active, .hour.active, .second.active {
+      background: $company-color !important;
+    }
+
+    & > td.day.selected:hover, .day.active:hover, td.month.selected:hover, td.month.active:hover, td.year.selected:hover, td.year.active:hover {
+      background: darken($company-color, 6%);
+    }
+  }
+
+  table tr {
+    & td.disabled, td.disabled:hover {
+      color: #777 !important;
+    }
+  }
+}

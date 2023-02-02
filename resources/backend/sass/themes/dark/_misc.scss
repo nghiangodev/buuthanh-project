@@ -1,0 +1,35 @@
+@import "../../variables";
+//@import "../../components/layout";
+//MIXIN
+@import "../../mixin";
+
+.nav-item {
+	.nav-link {
+		background-color: #e7edf3;
+		color: $text-color !important;
+		font-weight: 600 !important;
+
+		.active {
+			background-color: white;
+		}
+	}
+}
+
+//@media (max-width: 577px) {
+//  .btn, .btn-main, .btn-sub {
+//    width: 100%;
+//    margin-right: 0 !important;
+//
+//    span {
+//      margin: auto;
+//    }
+//  }
+//}
+
+.accordion {
+	margin: 10px 0;
+
+	&.accordion-toggle-svg .card .card-header .card-title {
+		background-color: $light-gray;
+	}
+}

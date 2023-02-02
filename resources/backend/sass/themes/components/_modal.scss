@@ -1,0 +1,46 @@
+@import "../../variables";
+//MIXIN
+@import "../../mixin";
+
+$contexts: danger primary warning success info brand;
+//contextual modal
+.modal {
+	.modal-content {
+		border: none;
+
+		.modal-header .close:hover {
+			color: white !important;
+		}
+	}
+
+	.modal-header {
+		border: none;
+		padding: 1rem 1.5rem;
+
+		border-top-left-radius: 1px !important;
+		border-top-right-radius: 1px !important;
+	}
+
+	.modal-body {
+		background-color: white;
+	}
+
+	.modal-footer {
+		border: none;
+		background-color: var(--light);
+		padding: 1rem 1.5rem;
+	}
+
+	@each $context in $contexts {
+		&.modal-#{$context} {
+			.modal-header {
+				background-color: var(--#{$context});
+
+				.modal-title, .close {
+					color: white;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

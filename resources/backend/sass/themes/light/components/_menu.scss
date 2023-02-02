@@ -1,0 +1,23 @@
+//MIXIN
+@import "../../../mixin";
+
+.kt-header .kt-header-menu .kt-menu__nav > .kt-menu__item:hover > .kt-menu__link {
+	background-color: rgba(77, 89, 149, .06);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.kt-aside-menu {
+	.kt-menu__nav > .kt-menu__item {
+		& > .kt-menu__submenu .kt-menu__subnav > .kt-menu__item > .kt-menu__submenu .kt-menu__subnav > .kt-menu__item > .kt-menu__link {
+			padding-left: 30px;
+		}
+
+		& .kt-menu__submenu .kt-menu__item {
+			margin: 0 1rem;
+		}
+	}
+}
+
+.btn-brand:not(:disabled):not(.disabled):active {
+    background-color: #000 !important;
+}

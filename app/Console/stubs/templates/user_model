@@ -1,0 +1,25 @@
+<?php
+
+namespace {{namespace}};
+
+{{imports}}
+
+class {{class}} extends {{parent}}
+{
+{{body}}
+	public static string $logName = '{{class}}';
+
+    protected static bool $logOnlyDirty = true;
+
+    protected static bool $logFillable = true;
+
+    public array $enums = [
+
+    ];
+
+    public array $filters = [
+
+    ];
+
+    public string $displayAttribute = 'name';
+}

@@ -1,0 +1,99 @@
+//== Media Query - Responsive Below
+@mixin responsive-below($width) {
+	@media (max-width: #{$width}) {
+		@content;
+	}
+}
+
+//== Media Query - Responsive Above
+@mixin responsive-above($width) {
+	@media (min-width: #{$width}) {
+		@content;
+	}
+}
+
+@function breakpoint-next($name, $breakpoints: $layout-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+	$n: index($breakpoint-names, $name);
+	@return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-min($name, $breakpoints: $layout-breakpoints) {
+	$min: map-get($breakpoints, $name);
+	@return if($min !=0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $layout-breakpoints) {
+	$next: breakpoint-next($name, $breakpoints);
+	@return if($next, breakpoint-min($next, $breakpoints) - .02, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $layout-breakpoints) {
+	@return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin responsive-up($name, $breakpoints: $layout-breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+// Media of at most the maximum breakpoint width. No query for the largest breakpoint.
+// Makes the @content apply to the given breakpoint and narrower.
+@mixin responsive-down($name, $breakpoints: $layout-breakpoints) {
+	$max: breakpoint-max($name, $breakpoints);
+	@if $max {
+		@media (max-width: $max) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+// Media that spans multiple breakpoint widths.
+// Makes the @content apply between the min and max breakpoints
+@mixin responsive-between($lower, $upper, $breakpoints: $layout-breakpoints) {
+	$min: breakpoint-min($lower, $breakpoints);
+	$max: breakpoint-max($upper, $breakpoints);
+	@if $min !=null and $max !=null {
+		@media (min-width: $min) and (max-width: $max) {
+			@content;
+		}
+	} @else if $max==null {
+		@include responsive-up($lower, $breakpoints) {
+			@content;
+		}
+	} @else if $min==null {
+		@include responsive-down($upper, $breakpoints) {
+			@content;
+		}
+	}
+}
+
+// Media between the breakpoint's minimum and maximum widths.
+// No minimum for the smallest breakpoint, and no maximum for the largest one.
+// Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+@mixin responsive-only($name, $breakpoints: $layout-breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+	$max: breakpoint-max($name, $breakpoints);
+	@if $min !=null and $max !=null {
+		@media (min-width: $min) and (max-width: $max) {
+			@content;
+		}
+	} @else if $max==null {
+		@include responsive-up($name, $breakpoints) {
+			@content;
+		}
+	} @else if $min==null {
+		@include responsive-down($name, $breakpoints) {
+			@content;
+		}
+	}
+}

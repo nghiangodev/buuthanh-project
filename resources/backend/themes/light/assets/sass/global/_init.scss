@@ -1,0 +1,23 @@
+//
+// Main init file of global functions and mixins
+//
+
+
+
+// Functions
+@import "functions";
+
+// Mixins
+@import "mixins";
+
+@import "../../../../assets/sass/integration/plugins/mixins/perfect-scrollbar";
+@import "../../../../assets/sass/components/base/mixins/grid";
+@import "../../../../assets/sass/components/base/mixins/burger-menu";
+@import "../../../../assets/sass/components/base/mixins/menu-horizontal";
+@import "../../../../assets/sass/components/base/mixins/menu-vertical";
+@import "../../../../assets/sass/components/base/mixins/offcanvas";
+@import "../../../../assets/sass/components/base/mixins/spinner";
+@import "../../../../assets/sass/components/base/mixins/wave";
+@import "../../../../assets/sass/components/layout/mixins/app";
+@import "../../../../assets/sass/components/typography/mixins/link";
+@import "../../../../assets/sass/components/general/mixins/media";

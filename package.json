@@ -1,0 +1,74 @@
+{
+	"private": true,
+	"scripts": {
+		"dev": "npm run development",
+		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "npm run development -- --watch",
+		"watch-poll": "npm run watch -- --watch-poll",
+		"watch-all": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --all --watch",
+		"watch-core-js": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --core-js --watch",
+		"watch-core-sass": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --core-sass --watch",
+		"watch-core-all": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --core --watch",
+		"watch-theme": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --theme --watch",
+		"watch-auth": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --auth --watch",
+		"watch-custom": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --custom --watch",
+		"build-all": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --all",
+		"build-core-js": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --core-js",
+		"build-core-sass": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --core-sass",
+		"build-core-all": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --core",
+		"build-theme": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --theme",
+		"build-auth": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --auth",
+		"build-custom": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --custom",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"server": "php artisan serve",
+		"lint": "eslint resources/backend/js/ --fix"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^11.0.0",
+		"@commitlint/config-conventional": "^11.0.0",
+		"axios": "^0.19.2",
+		"bootstrap": "^4.4.1",
+		"browser-sync": "^2.26.7",
+		"browser-sync-webpack-plugin": "2.2.2",
+		"cross-env": "^7.0.2",
+		"eslint": "^6.8.0",
+		"husky": "^5.0.9",
+		"jquery": "3.3.1",
+		"laravel-mix": "^5.0.4",
+		"lodash": "^4.17.15",
+		"popper.js": "^1.16.1",
+		"resolve-url-loader": "^3.1.1",
+		"sass": "^1.26.3",
+		"sass-loader": "^8.0.2",
+		"vue": "^2.6.11",
+		"vue-template-compiler": "^2.6.11"
+	},
+	"dependencies": {
+		"cleave.js": "^1.5.9",
+		"express": "^4.17.1",
+		"filepond": "^4.13.0",
+		"filepond-plugin-file-validate-type": "^1.2.5",
+		"filepond-plugin-image-preview": "^4.6.1",
+		"highcharts": "^8.0.4",
+		"jquery.alphanum": "^1.0.26",
+		"numeral": "^2.0.6",
+		"redis": "^3.0.2",
+		"socket.io": "^2.3.0",
+		"socket.io-client": "^2.3.0",
+		"socket.io-redis": "^5.2.0",
+		"standard-version": "^7.1.0",
+		"vue-filepond": "^6.0.2"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"standard-version": {
+		"skip": {
+			"tag": true
+		}
+	}
+}

@@ -1,0 +1,153 @@
+//
+// Global Components And 3rd-party Plugin Customizations
+//
+
+
+
+// 3rd-party plugins customizations
+@import "../../../../assets/sass/integration/plugins/perfect-scrollbar";
+@import "../../../../assets/sass/integration/plugins/blockui";
+@import "../../../../assets/sass/integration/plugins/fullcalendar";
+@import "../../../../assets/sass/integration/plugins/bootstrap-datepicker";
+//@import "../../../../assets/sass/integration/plugins/bootstrap-notify";
+@import "../../../../assets/sass/integration/plugins/bootstrap-switch";
+@import "../../../../assets/sass/integration/plugins/bootstrap-datetimepicker";
+@import "../../../../assets/sass/integration/plugins/bootstrap-timepicker";
+@import "../../../../assets/sass/integration/plugins/bootstrap-daterangepicker";
+@import "../../../../assets/sass/integration/plugins/bootstrap-touchspin";
+@import "../../../../assets/sass/integration/plugins/bootstrap-maxlength";
+@import "../../../../assets/sass/integration/plugins/bootstrap-select";
+@import "../../../../assets/sass/integration/plugins/bootstrap-session-timeout";
+//@import "../../../../assets/sass/integration/plugins/jqvmap";
+@import "../../../../assets/sass/integration/plugins/ion-range-slider";
+@import "../../../../assets/sass/integration/plugins/typeahead";
+//@import "../../../../assets/sass/integration/plugins/nouislider";
+//@import "../../../../assets/sass/integration/plugins/summernote";
+//@import "../../../../assets/sass/integration/plugins/bootstrap-markdown";
+@import "../../../../assets/sass/integration/plugins/dropzone";
+//@import "../../../../assets/sass/integration/plugins/recaptcha";
+//@import "../../../../assets/sass/integration/plugins/toastr";
+//@import "../../../../assets/sass/integration/plugins/gmaps";
+@import "../../../../assets/sass/integration/plugins/fontawesome5";
+@import "../../../../assets/sass/integration/plugins/jstree";
+@import "../../../../assets/sass/integration/plugins/select2";
+@import "../../../../assets/sass/integration/plugins/sweetalert2";
+@import "../../../../assets/sass/integration/plugins/datatables";
+//@import "../../../../assets/sass/integration/plugins/jquery-repeater";
+@import "../../../../assets/sass/integration/plugins/duallistbox";
+//@import "../../../../assets/sass/integration/plugins/uppy";
+//@import "../../../../assets/sass/integration/plugins/quill";
+@import "../../../../assets/sass/integration/plugins/tagify";
+@import "../../../../assets/sass/integration/plugins/tinymce";
+@import "../../../../assets/sass/integration/plugins/ckeditor";
+//@import "../../../../assets/sass/integration/plugins/kanban";
+
+// Base components
+@import "../../../../assets/sass/components/base/container";
+@import "../../../../assets/sass/components/base/page-loader";
+@import "../../../../assets/sass/components/base/normalize";
+@import "../../../../assets/sass/components/base/animations";
+@import "../../../../assets/sass/components/base/helpers";
+@import "../../../../assets/sass/components/base/mixins/grid";
+@import "../../../../assets/sass/components/base/grid";
+@import "../../../../assets/sass/components/base/portlet";
+//@import "../../../../assets/sass/components/base/datatable";
+@import "../../../../assets/sass/components/base/scrolltop";
+@import "../../../../assets/sass/components/base/form";
+@import "../../../../assets/sass/components/base/input-icon";
+@import "../../../../assets/sass/components/base/checkbox";
+@import "../../../../assets/sass/components/base/radio";
+@import "../../../../assets/sass/components/base/switch";
+@import "../../../../assets/sass/components/base/option";
+@import "../../../../assets/sass/components/base/avatar";
+@import "../../../../assets/sass/components/base/spinner";
+@import "../../../../assets/sass/components/base/loader";
+@import "../../../../assets/sass/components/base/pulse";
+@import "../../../../assets/sass/components/base/dialog";
+@import "../../../../assets/sass/components/base/mixins/wave";
+@import "../../../../assets/sass/components/base/cloudteam";
+
+// General components
+@import "../../../../assets/sass/components/general/grid-nav-v2";
+@import "../../../../assets/sass/components/general/grid-nav";
+@import "../../../../assets/sass/components/general/head";
+//@import "../../../../assets/sass/components/general/list-pics";
+//@import "../../../../assets/sass/components/general/list-timeline";
+//@import "../../../../assets/sass/components/general/my-cart";
+@import "../../../../assets/sass/components/general/nav";
+@import "../../../../assets/sass/components/general/notification";
+@import "../../../../assets/sass/components/general/notification-v2";
+@import "../../../../assets/sass/components/general/profile";
+//@import "../../../../assets/sass/components/general/notes";
+//@import "../../../../assets/sass/components/general/timeline-v1";
+//@import "../../../../assets/sass/components/general/timeline-v2";
+//@import "../../../../assets/sass/components/general/timeline-v3";
+@import "../../../../assets/sass/components/general/user-card";
+@import "../../../../assets/sass/components/general/user-card-v2";
+@import "../../../../assets/sass/components/general/user-card-v3";
+@import "../../../../assets/sass/components/general/media";
+@import "../../../../assets/sass/components/general/pagination";
+@import "../../../../assets/sass/components/general/searchbar";
+@import "../../../../assets/sass/components/general/callout";
+@import "../../../../assets/sass/components/general/iconbox";
+@import "../../../../assets/sass/components/general/infobox";
+@import "../../../../assets/sass/components/general/ribbon";
+//@import "../../../../assets/sass/components/general/chat";
+
+// Layout components
+@import "../../../../assets/sass/components/layout/demo-panel";
+@import "../../../../assets/sass/components/layout/offcanvas-panel";
+@import "../../../../assets/sass/components/layout/quick-panel";
+@import "../../../../assets/sass/components/layout/quick-search";
+@import "../../../../assets/sass/components/layout/scroll";
+@import "../../../../assets/sass/components/layout/sticky-toolbar";
+@import "../../../../assets/sass/components/layout/app";
+@import "../../../../assets/sass/components/layout/subheader";
+
+// Typography components
+@import "../../../../assets/sass/components/typography/badge";
+//@import "../../../../assets/sass/components/typography/demo";
+@import "../../../../assets/sass/components/typography/divider";
+@import "../../../../assets/sass/components/typography/heading";
+@import "../../../../assets/sass/components/typography/link";
+@import "../../../../assets/sass/components/typography/section";
+@import "../../../../assets/sass/components/typography/separator";
+@import "../../../../assets/sass/components/typography/svg-icon";
+
+// Widget components
+//@import "../../../../assets/sass/components/widgets/dashboard/widget1";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget2";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget3";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget4";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget5";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget6";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget7";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget9";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget10";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget11";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget12";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget13";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget14";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget15";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget16";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget17";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget19";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget20";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget21";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget24";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget25";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget26";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget27";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget28";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget29";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget30";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget31";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget32";
+//@import "../../../../assets/sass/components/widgets/dashboard/widget33";
+
+//@import "../../../../assets/sass/components/widgets/general/profile-1";
+//@import "../../../../assets/sass/components/widgets/general/profile-2";
+//@import "../../../../assets/sass/components/widgets/general/profile-3";
+//@import "../../../../assets/sass/components/widgets/general/profile-4";
+//@import "../../../../assets/sass/components/widgets/general/users";
+//@import "../../../../assets/sass/components/widgets/general/project-1";

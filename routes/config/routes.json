@@ -1,0 +1,13 @@
+{
+    "system": [
+        "users",
+        "roles",
+        "activity_logs",
+        "system_logs",
+        "translation_managers",
+        "events"
+    ],
+    "business": [
+        "numberals"
+    ]
+}

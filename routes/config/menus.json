@@ -1,0 +1,40 @@
+{
+    "home": {
+        "icon": "fad fa-home",
+        "parent": "",
+        "route": "home"
+    },
+    "system": {
+        "modules": {
+            "users": {
+                "icon": "fad fa-users",
+                "parent": "",
+                "route": "users.index"
+            },
+            "roles": {
+                "icon": "fad fa-users-cog",
+                "parent": "",
+                "route": "roles.index"
+            },
+            "activity_logs": {
+                "icon": "fad fa-file",
+                "parent": "",
+                "route": "activity_logs.index",
+                "permission": "log"
+            }
+        },
+        "icon": "fad fa-cogs",
+        "hide": false
+    },
+    "business": {
+        "modules": {
+            "numberals": {
+                "icon": "fad fa-file",
+                "parent": "",
+                "route": "numberals.index",
+                "hide": false
+            }
+        },
+        "icon": "fad fa-place-of-worship"
+    }
+}

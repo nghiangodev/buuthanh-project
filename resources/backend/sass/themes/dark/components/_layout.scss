@@ -1,0 +1,15 @@
+@import "../../../variables";
+//MIXIN
+@import "../../../mixin";
+
+@media (min-width: 1650px) {
+	.kt-container {
+		width: 1600px;
+	}
+}
+
+@include responsive-up(lg) {
+	.kt-container {
+		padding: 0 25px
+	}
+}

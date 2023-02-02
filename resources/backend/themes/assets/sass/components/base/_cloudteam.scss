@@ -1,0 +1,27 @@
+.btn-action {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-icon;
+}
+
+.btn-action-view,
+.btn-action-edit,
+.btn-action-delete,
+.btn-action-change-state {
+	@extend .btn-action;
+}
+
+//note: button save, search, cancel, back
+.btn-general {
+	@extend .btn;
+}
+
+.btn-main {
+	@extend .btn-general;
+	@extend .btn-brand;
+}
+
+.btn-sub {
+	@extend .btn-general;
+	@extend .btn-outline-brand;
+}

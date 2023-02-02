@@ -1,0 +1,40 @@
+//BASE COMPONENT
+@import "../components/table";
+@import "../components/form";
+@import "../components/modal";
+@import "../components/portlet";
+
+//@import "../components/button";
+@import "../components/header";
+
+//END BASE COMPONENT
+
+@import "components/layout";
+@import "components/menu";
+@import "misc";
+
+//CUSTOM
+//@import "../../custom";
+
+/** PLUGINS **/
+//@import "~highcharts/css/highcharts";
+
+@import "../../plugins/bootstrap-fileinput";
+@import "../../plugins/datepicker";
+
+@import "../../../themes/dark/assets/sass/global/layout/aside/skins/light";
+@import "../../../themes/dark/assets/sass/global/layout/brand/skins/light";
+
+@import "../../../themes/dark/assets/sass/global/layout/header/skins/base/light";
+@import "../../../themes/dark/assets/sass/global/layout/header/skins/menu/light";
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: hsl(210, 32%, 93%);
+	color: #000 !important;
+}
+
+:root {
+	--brand: #{$company-color}
+}
+
